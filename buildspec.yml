@@ -9,11 +9,11 @@ phase:
   build:
     commands:
       - docker build -t brain-task-app .
-      - docker tag brain-task-app $DOCKER_USERNAME/project-brain-task-app
+      - docker tag brain-task-app $DOCKER_USERNAME/brain-task-app:latest
 
   post_build:
     commands:
-      - docker push $DOCKER_USERNAME/project-brain-task-app
+      - docker push $DOCKER_USERNAME/brain-task-app:latest
 
 artifacts:
   files:

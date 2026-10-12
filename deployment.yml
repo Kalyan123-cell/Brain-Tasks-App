@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: brain-task-app
-        image: sivakumar1207/project-brain-task-app
+        image: kalyangogu/brain-task-app
         ports:
         - containerPort: 80
